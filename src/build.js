@@ -1,3 +1,3 @@
 const alfy = require('alfy');
 const jenkins = require('./jenkins');
-jenkins.job.build({ name: alfy.input, parameters: { delay: '0sec'} });
+jenkins.job.build(alfy.input, { delay: '0sec'});
