@@ -37,7 +37,7 @@
 	<key>createdby</key>
 	<string>Ziqiang Li</string>
 	<key>description</key>
-	<string>Jenkins Deploy</string>
+	<string>执行Jenkins任务</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -170,10 +170,10 @@ eg: http://username:pwd@10.153.171.6:8080
 	<key>variables</key>
 	<dict>
 		<key>JENKINS_URL</key>
-		<string></string>
+		<string>http://liziqiang:liziqiang@10.153.171.6:8080</string>
 	</dict>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.0.3</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
