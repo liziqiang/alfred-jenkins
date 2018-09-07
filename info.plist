@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string>com.lizq.jenkins</string>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>7AD66D87-8876-4161-942B-197BF57D54CF</key>
@@ -139,9 +139,10 @@
 	<key>readme</key>
 	<string>PLEASE EDIT THIS CONFIG BEFORE USING~
 
-EXAMPLE:
+1. MODIFY JENKINS URL
+eg: http://username:pwd@10.153.171.6:8080
 
-http://username:pwd@10.153.171.6:8080</string>
+2. MODIFY NODE PATH</string>
 	<key>uidata</key>
 	<dict>
 		<key>7AD66D87-8876-4161-942B-197BF57D54CF</key>
@@ -169,10 +170,10 @@ http://username:pwd@10.153.171.6:8080</string>
 	<key>variables</key>
 	<dict>
 		<key>JENKINS_URL</key>
-		<string>http://liziqiang:liziqiang@10.153.171.6:8080</string>
+		<string></string>
 	</dict>
 	<key>version</key>
-	<string>1.1</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
