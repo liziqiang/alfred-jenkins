@@ -1,0 +1,12 @@
+{
+  "name": "execute_jenkins_jobs",
+  "version": "1.0.0",
+  "description": "执行Jenkins任务",
+  "main": "index.js",
+  "author": "Ziqiang Li",
+  "license": "MIT",
+  "dependencies": {
+    "alfy": "^0.7.0",
+    "jenkins": "^0.22.1"
+  }
+}
