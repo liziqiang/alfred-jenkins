@@ -24,6 +24,16 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>D21AD68C-E1D0-4807-B9B2-4D5EFF427DD2</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>7AD66D87-8876-4161-942B-197BF57D54CF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -62,6 +72,25 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>F8608EEE-A149-4CFE-977D-992CC3972274</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D21AD68C-E1D0-4807-B9B2-4D5EFF427DD2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -148,23 +177,30 @@ eg: http://username:pwd@10.153.171.6:8080
 		<key>7AD66D87-8876-4161-942B-197BF57D54CF</key>
 		<dict>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>310</integer>
 		</dict>
 		<key>8C8B6723-6E73-4BA6-8657-C29A6B25B806</key>
 		<dict>
 			<key>xpos</key>
-			<integer>140</integer>
+			<integer>130</integer>
 			<key>ypos</key>
-			<integer>120</integer>
+			<integer>160</integer>
+		</dict>
+		<key>D21AD68C-E1D0-4807-B9B2-4D5EFF427DD2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>160</integer>
 		</dict>
 		<key>F8608EEE-A149-4CFE-977D-992CC3972274</key>
 		<dict>
 			<key>xpos</key>
-			<integer>380</integer>
+			<integer>390</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -173,7 +209,7 @@ eg: http://username:pwd@10.153.171.6:8080
 		<string>http://liziqiang:liziqiang@10.153.171.6:8080</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.3</string>
+	<string>1.0.5</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

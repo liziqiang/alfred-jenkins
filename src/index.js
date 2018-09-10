@@ -23,10 +23,17 @@ function fetchJobs() {
 function outputJobs(jobs) {
     let items = alfy.matches(alfy.input, jobs, 'name').map((job) => {
         let jobName = job.name;
+        let jobPage = job.url;
         return {
             title: jobName,
             subtitle: jobName,
             arg: jobName,
+            mods: {
+                'cmd': {
+                    arg: jobPage,
+                    subtitle: `Open Page: ${jobPage}`
+                }
+            },
             icon: {
                 path: UTIL.resolvePath(`./images/${job.color}.png`)
             }
