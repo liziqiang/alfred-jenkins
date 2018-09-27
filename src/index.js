@@ -10,7 +10,7 @@ if (!cache) {
 
 // 初始化获取Jenkins任务列表
 function fetchJobs() {
-    jenkins.job.list(function (err, jobs) {
+    jenkins.job.list().then((err, jobs) => {
         if (err) throw err;
         if (jobs) {
             alfy.cache.set('jobs', jobs);
