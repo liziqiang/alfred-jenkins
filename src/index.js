@@ -24,14 +24,19 @@ function outputJobs(jobs) {
     let items = alfy.matches(alfy.input, jobs, 'name').map((job) => {
         let jobName = job.name;
         let jobPage = job.url;
+        let shortName = jobName.split('_deploy')[0];
         return {
-            title: jobName,
-            subtitle: jobName,
+            title: shortName,
+            // subtitle: jobName,
             arg: jobName,
+            variables: {
+                jobName,
+                shortName
+            },
             mods: {
                 'cmd': {
                     arg: jobPage,
-                    subtitle: `Open Page: ${jobPage}`
+                    subtitle: `Open Jenkins Build Page: ${jobPage}`
                 }
             },
             icon: {

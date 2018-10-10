@@ -64,7 +64,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>正在构建，请稍后~</string>
+				<string>正在构建{var:shortName}，请稍后~</string>
 				<key>title</key>
 				<string>Jenkins</string>
 			</dict>
@@ -209,7 +209,7 @@ eg: http://username:pwd@10.153.171.6:8080
 		<string>http://liziqiang:liziqiang@10.153.171.6:8080</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.5</string>
+	<string>1.0.9</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
