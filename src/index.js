@@ -21,7 +21,7 @@ function fetchJobs() {
 
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
-    let items = alfy.matches(alfy.input, jobs, 'name').map((job) => {
+    let items = alfy.matches(UTIL.convertInput(alfy.input), jobs, 'name').map((job) => {
         let jobName = job.name;
         let jobPage = job.url;
         let shortName = jobName.split('_deploy')[0];
