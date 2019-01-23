@@ -21,14 +21,15 @@ function fetchJobs() {
 
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
-    let split = '_deploy';
+    const split_name = UTIL.getEnv('JENKINS_SPLIT_NAME') || '-_';
     let items = alfy.matches(alfy.input, jobs, (item, input) => {
-        let inputs = input.split(' ');
-        return inputs.every((v) => item.name.split(split)[0].includes(v));
+        item.shortName = item.name.split('_deploy')[0];
+        let inputs = input.split(/\s+/);
+        return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
     }).map((job) => {
         let jobName = job.name;
         let jobPage = job.url;
-        let shortName = jobName.split(split)[0];
+        let shortName = job.shortName;
         return {
             title: shortName,
             // subtitle: jobName,

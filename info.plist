@@ -205,11 +205,13 @@ eg: http://username:pwd@10.153.171.6:8080
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>JENKINS_SPLIT_NAME</key>
+		<string></string>
 		<key>JENKINS_URL</key>
 		<string>http://liziqiang:liziqiang@10.153.171.6:8080</string>
 	</dict>
 	<key>version</key>
-	<string>1.0.9</string>
+	<string>1.1.3</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>

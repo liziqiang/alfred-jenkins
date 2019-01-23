@@ -1,6 +1,6 @@
 {
     "name": "alfred-jenkins",
-    "version": "1.1.2",
+    "version": "1.1.3",
     "description": "执行Jenkins任务",
     "main": "index.js",
     "author": "Ziqiang Li",
