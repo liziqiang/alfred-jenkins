@@ -1,23 +1,6 @@
 const alfy = require('alfy');
 const UTIL = require('./util');
 const jenkins = require('./jenkins');
-let cache = alfy.cache.get('jobs');
-if (!cache) {
-    fetchJobs();
-} else {
-    outputJobs(cache);
-}
-
-// 初始化获取Jenkins任务列表
-function fetchJobs() {
-    jenkins.job.list((err, jobs) => {
-        if (err) throw err;
-        if (jobs) {
-            alfy.cache.set('jobs', jobs);
-            outputJobs(jobs);
-        }
-    });
-}
 
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
@@ -54,3 +37,5 @@ function outputJobs(jobs) {
     }
     alfy.output(items);
 }
+
+jenkins.fetchJobs().then(outputJobs);
