@@ -7,7 +7,7 @@ function outputJobs(jobs) {
     const split_name = UTIL.getEnv('JENKINS_SPLIT_NAME') || '-_';
     let items = alfy.matches(alfy.input, jobs, (item, input) => {
         item.shortName = item.name.split('_deploy')[0];
-        let inputs = input.split(/\s+/);
+        let inputs = input.trim().split(/\s+/);
         return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
     }).map((job) => {
         let jobName = job.name;
