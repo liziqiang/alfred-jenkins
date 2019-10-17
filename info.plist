@@ -120,7 +120,7 @@
 				<key>runningsubtext</key>
 				<string>Loading...</string>
 				<key>script</key>
-				<string>/usr/local/opt/node@8/bin/node src/index.js "$1"</string>
+				<string>/usr/local/bin/node src/index.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -149,7 +149,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/local/opt/node@8/bin/node src/build.js "$1"</string>
+				<string>/usr/local/bin/node src/build.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
