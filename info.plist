@@ -215,7 +215,7 @@ eg: http://username:pwd@10.153.171.6:8080
 		<string>-_</string>
 	</dict>
 	<key>version</key>
-	<string>1.2.1</string>
+	<string>1.2.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/liziqiang/alfred-jenkins#readme</string>
 </dict>
