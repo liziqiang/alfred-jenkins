@@ -6,9 +6,10 @@ const jenkins = require('./jenkins');
 function outputJobs(jobs) {
     const split_name = UTIL.getEnv('SPLIT_NAME');
     const split_match = UTIL.getEnv('SPLIT_MATCH');
-    let items = alfy.matches(alfy.input, jobs, (item, input) => {
+    const inputStr = alfy.input.trim();
+    let items = alfy.matches(inputStr, jobs, (item, input) => {
         item.shortName = item.name.split(split_match)[0];
-        let inputs = input.trim().split(/\s+/);
+        let inputs = input.split(/\s+/);
         if (inputs.length === 1) {
             inputs = input.split('>');
             return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
