@@ -208,14 +208,14 @@ eg: http://username:pwd@10.153.171.6:8080
 	<key>variables</key>
 	<dict>
 		<key>JENKINS_URL</key>
-		<string>http://liziqiang:125147Lee:@10.130.115.43:8080</string>
+		<string>http://username:password@10.130.115.43:8080</string>
 		<key>SPLIT_MATCH</key>
 		<string>_</string>
 		<key>SPLIT_NAME</key>
 		<string>-_</string>
 	</dict>
 	<key>version</key>
-	<string>1.1.9</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/liziqiang/alfred-jenkins#readme</string>
 </dict>
