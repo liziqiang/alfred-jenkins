@@ -4,8 +4,8 @@ const jenkins = require('./jenkins');
 
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
-    const split_name = UTIL.getEnv('JENKINS_SPLIT_NAME') || '-_';
-    const split_match = UTIL.getEnv('JENKINS_SPLIT_MATCH') || '_';
+    const split_name = UTIL.getEnv('SPLIT_NAME');
+    const split_match = UTIL.getEnv('SPLIT_MATCH');
     let items = alfy.matches(alfy.input, jobs, (item, input) => {
         item.shortName = item.name.split(split_match)[0];
         let inputs = input.trim().split(/\s+/);
