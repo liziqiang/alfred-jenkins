@@ -5,10 +5,11 @@ const jenkins = require('./jenkins');
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
     const split_name = UTIL.getEnv('JENKINS_SPLIT_NAME') || '-_';
+    const split_match = UTIL.getEnv('JENKINS_SPLIT_MATCH') || '_';
     let items = alfy.matches(alfy.input, jobs, (item, input) => {
-        item.shortName = item.name.split('_deploy')[0];
+        item.shortName = item.name.split(split_match)[0];
         let inputs = input.trim().split(/\s+/);
-        return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
+        return new RegExp(inputs.join(`.*[${split_name}]`)).test(item.shortName);
     }).map((job) => {
         let jobName = job.name;
         let jobPage = job.url;
