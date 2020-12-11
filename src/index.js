@@ -9,6 +9,10 @@ function outputJobs(jobs) {
     let items = alfy.matches(alfy.input, jobs, (item, input) => {
         item.shortName = item.name.split(split_match)[0];
         let inputs = input.trim().split(/\s+/);
+        if (inputs.length === 1) {
+            inputs = input.split('>');
+            return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
+        }
         return new RegExp(inputs.join(`.*[${split_name}]`)).test(item.shortName);
     }).map((job) => {
         let jobName = job.name;
