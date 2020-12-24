@@ -14,7 +14,9 @@ function outputJobs(jobs) {
             inputs = input.split('>');
             return new RegExp(inputs.join(`[${split_name}]`)).test(item.shortName);
         }
-        return new RegExp(inputs.join(`.*[${split_name}]`)).test(item.shortName);
+
+        const queries = inputs.map(() => `(${inputs.join('|')})`);
+        return new RegExp(queries.join(`.*[${split_name}]`)).test(item.shortName);
     }).map((job) => {
         let jobName = job.name;
         let jobPage = job.url;
