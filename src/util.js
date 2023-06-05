@@ -1,5 +1,9 @@
-const path = require('path');
+import url from 'url';
+import path from 'path';
 const getEnv = (key) => process.env[key];
-const resolvePath = (p) => path.resolve(__dirname, p);
+const resolvePath = (p) => path.resolve(url.fileURLToPath(new URL('.', import.meta.url)), p);
 
-module.exports = { getEnv, resolvePath };
+export default {
+    getEnv,
+    resolvePath
+}

@@ -1,11 +1,11 @@
-const alfy = require('alfy');
-const UTIL = require('./util');
-const jenkins = require('./jenkins');
+import alfy from 'alfy';
+import util from './util.js';
+import jenkins from './jenkins.js';
 
 // 过滤结果并输出到Alfred
 function outputJobs(jobs) {
-    const split_name = UTIL.getEnv('SPLIT_NAME');
-    const split_match = UTIL.getEnv('SPLIT_MATCH');
+    const split_name = util.getEnv('SPLIT_NAME');
+    const split_match = util.getEnv('SPLIT_MATCH');
     const inputStr = alfy.input.trim();
     let items = alfy.matches(inputStr, jobs, (item, input) => {
         item.shortName = item.name.split(split_match)[0];
@@ -36,7 +36,7 @@ function outputJobs(jobs) {
                 }
             },
             icon: {
-                path: UTIL.resolvePath(`./images/${job.color}.png`)
+                path: util.resolvePath(`./images/${job.color}.png`)
             }
         };
     });

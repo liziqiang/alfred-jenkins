@@ -1,5 +1,5 @@
-const alfy = require('alfy');
-const UTIL = require('./util');
-const jenkins = require('./jenkins');
-const DELAY = UTIL.getEnv('DELAY') || 0;
+import alfy from 'alfy';
+import util from './util.js';
+import jenkins from './jenkins.js';
+const DELAY = util.getEnv('DELAY') || 0;
 jenkins.job.build(alfy.input, { delay: `${DELAY}sec`});

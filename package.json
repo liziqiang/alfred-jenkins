@@ -1,8 +1,9 @@
 {
     "name": "alfred-jenkins",
-    "version": "1.2.10",
+    "version": "1.2.11",
     "description": "执行Jenkins任务",
     "main": "index.js",
+    "type": "module",
     "author": "Ziqiang Li",
     "license": "MIT",
     "repository": {
@@ -14,7 +15,7 @@
         "preuninstall": "alfy-cleanup"
     },
     "dependencies": {
-        "alfy": "^0.9.1",
-        "jenkins": "0.28.1"
+        "alfy": "^1.1.0",
+        "jenkins": "^1.0.1"
     }
 }
