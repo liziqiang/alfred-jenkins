@@ -36,7 +36,7 @@ function outputJobs(jobs) {
                 }
             },
             icon: {
-                path: UTIL.resolvePath(`./images/${job.color}.png`)
+                path: UTIL.resolvePath(`./images/${job.color}_anime.gif`)
             }
         };
     });
