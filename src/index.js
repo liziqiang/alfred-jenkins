@@ -36,7 +36,7 @@ function outputJobs(jobs) {
                 }
             },
             icon: {
-                path: util.resolvePath(`./images/${job.color}.png`)
+                path: util.resolvePath(`./images/${job.color}.${job.color && job.color.endsWith('_anime') ? 'gif' : 'png'}`)
             }
         };
     });
