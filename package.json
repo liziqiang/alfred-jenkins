@@ -1,6 +1,6 @@
 {
     "name": "alfred-jenkins",
-    "version": "1.2.11",
+    "version": "1.2.12",
     "description": "执行Jenkins任务",
     "main": "index.js",
     "type": "module",
