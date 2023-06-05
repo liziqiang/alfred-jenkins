@@ -638,12 +638,12 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
 
-jenkins@^0.28.1:
-  version "0.28.1"
-  resolved "https://registry.yarnpkg.com/jenkins/-/jenkins-0.28.1.tgz#f7951798ee5d2bb501a831979b6b5ecc1a922a64"
-  integrity sha512-gcC4QUrP4VzdqOMHoVzh36XlJprxJkI2HGLQSY7w84KoCTVNDcR/8O00tYyXp9vrZOx4wl5zCXLVKMgH2IoyJQ==
+jenkins@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/jenkins/-/jenkins-1.0.1.tgz#cf782afd5bf756036aea63bdcbcc89f6e4674c5a"
+  integrity sha512-AIcd38CBzro7fnjqUhuBlDXwIR/C1dhRNVz5pzKsHyEEGUk3zwHw1v5vouBap/y6FkNMxAMB7nwiesidOGXnqw==
   dependencies:
-    papi "^0.29.0"
+    papi "^1.1.0"
 
 js-tokens@^4.0.0:
   version "4.0.0"
@@ -921,9 +921,10 @@ package-json@^4.0.0:
     registry-url "^3.0.3"
     semver "^5.1.0"
 
-papi@^0.29.0:
-  version "0.29.0"
-  resolved "https://registry.npmjs.org/papi/-/papi-0.29.0.tgz#6bbc332f415d1f3563dea2d2fb8df760d939aebd"
+papi@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/papi/-/papi-1.1.2.tgz#5b1d7686834bec489f1f823103c5e8554f2b984f"
+  integrity sha512-cwM6pPpfAYgPe3EQi23SmB5J5s4XFS9lou9z63I5BbnMGmFaR8LAKvKboW7n1IUAKj76OtnyK0YU16JjnZrqVg==
 
 parse-json@^2.2.0:
   version "2.2.0"
