@@ -17,5 +17,4 @@ coverage
 .vscode
 *.yarnclean
 test.py
-package-lock.json
 .cache-loader/
